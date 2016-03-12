@@ -1,0 +1,21 @@
+﻿{
+  "authors": [ "Rolf Veinø Sørensen" ],
+  "dependencies": {
+    "MoM.Module": "1.0.0-*"
+  },
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": { }
+  },
+  "packInclude": { "dist/": "dist/**/*.*" },
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ],
+  "resource": "Views/**",
+  "version": "1.0.0-*"
+}
