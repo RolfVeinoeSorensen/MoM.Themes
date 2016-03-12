@@ -1,0 +1,10 @@
+﻿$web-font-path: "https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" !default;
+@import url($web-font-path);
+@import "variables.scss";
+@import "layout.scss";
+@import "nav.scss";
+@import "spinner.scss";
+@import "fileupload.scss";
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
