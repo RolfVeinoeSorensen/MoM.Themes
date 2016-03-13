@@ -1,0 +1,63 @@
+﻿/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.admin-sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .admin-sidebar {
+    position: fixed;
+    top: 90px;
+    width: 3rem;
+    /*bottom: 0;*/
+    left: 0;
+    z-index: 1000;
+    display: block;
+    /*padding-top: 2rem;*/
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: $gray-light;
+    border: 1px solid $gray;
+    border-width: 1px 1px 1px 0;
+  }
+}
+
+/* Sidebar navigation */
+.nav-admin-sidebar {
+  text-align:center;
+}
+.nav-admin-sidebar > li > a {
+  line-height: 3rem;  
+}
+
+.nav-admin-sidebar > li > a:hover,
+.nav-admin-sidebar > li > a:focus {
+  color: $gray-base;
+}
+
+.nav-admin-sidebar > .active > a,
+.nav-admin-sidebar > .active > a:hover,
+.nav-admin-sidebar > .active > a:focus {
+  color: $gray-base;
+}
+
+
+/*
+ * Main content
+ */
+
+.admin-main {
+    
+  /*padding: 20px;*/
+}
+@media (min-width: 768px) {
+  .admin-main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.admin-main .admin-page-header {
+  margin-top: 0;
+}
