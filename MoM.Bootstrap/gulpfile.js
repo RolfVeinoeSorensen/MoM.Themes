@@ -14,6 +14,7 @@ var gulp = require("gulp"),
     rename = require('gulp-rename');
 
 var paths = {
+    module: '/MoM.Bootstrap',
     dist: './dist/',
     dest: "../../MoM/MoM.Web/wwwroot/",
     bootstrap: '../node_modules/bootstrap/scss',
@@ -22,7 +23,7 @@ var paths = {
     sassSrcAppPath: "./Sass/**/app.scss"
 };
 
-gulp.task('css', function () {
+gulp.task('css', ['clean-dist'], function () {
     return sass(paths.sassSrcAppPath, {
         loadPath: [
             paths.bootstrap,
@@ -32,10 +33,10 @@ gulp.task('css', function () {
     .on("error", notify.onError(function (error) {
         return "Error: " + error.message;
     }))
-    .pipe(gulp.dest(paths.dist + "css"));
+    .pipe(gulp.dest(paths.dist + "css" + paths.module));
 });
 
-gulp.task('css-min', function () {
+gulp.task('css-min', ['clean-dist'], function () {
     return sass(paths.sassSrcAppPath, {
         loadPath: [
             paths.bootstrap,
@@ -47,19 +48,28 @@ gulp.task('css-min', function () {
     }))
     .pipe(cssmin())
 	.pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(paths.dist + "css"));
+    .pipe(gulp.dest(paths.dist + "css" + paths.module));
 });
 
-gulp.task('fonts', function () {
+gulp.task('fonts', ['clean-dist'], function () {
     return gulp.src(paths.fontawsome + 'fonts/**/*')
     .pipe(gulp.dest(paths.dist + "fonts"));
 })
 
-gulp.task('copy-dest', ['css', 'css-min', 'fonts'], function () {
+gulp.task('fonts-css', ['clean-dist'], function () {
+    return gulp.src(paths.fontawsome + 'css/**/*')
+    .pipe(gulp.dest(paths.dist + "css"));
+})
+
+gulp.task('clean-dist', function (cb) {
+    rimraf('./dist', cb);
+});
+
+gulp.task('copy-dest', ['clean-dist', 'css', 'css-min', 'fonts', 'fonts-css'], function () {
     gulp.src(paths.dist + '**/*.*/')
     .pipe(gulp.dest(paths.dest))
 });
 
 gulp.task('watch', function () {
-    gulp.watch(paths.sassSrcPath, ['css', 'css-min']);
+    gulp.watch(paths.sassSrcPath, ['copy-dest']);
 });

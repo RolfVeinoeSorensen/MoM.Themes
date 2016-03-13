@@ -1,0 +1,27 @@
+﻿
+.navbar-dark .navbar-nav .nav-link.router-link-active, 
+.navbar-dark .navbar-nav .nav-link.router-link-active:hover, 
+.navbar-dark .navbar-nav .nav-link.router-link-active:focus
+{
+    color:$body-bg;
+}
+
+.navbar-em {
+    background-color: $gray-lighter;
+    color:$body-bg;
+    /*height: 70px;
+    line-height: 70px;*/
+}
+
+.navbar-logo {
+    /*text-indent: -9999px;
+    background-image: url(images/em-logo.svg);
+    background-size: 333.23px 50px;
+    height: 50px;
+    min-height: 50px;
+    width: 333.23px;
+    min-width: 333.23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;*/
+}
