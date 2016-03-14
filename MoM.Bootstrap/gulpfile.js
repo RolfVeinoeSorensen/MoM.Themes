@@ -17,8 +17,8 @@ var paths = {
     module: '/MoM.Bootstrap',
     dist: './dist/',
     dest: "../../MoM/MoM.Web/wwwroot/",
-    bootstrap: '../node_modules/bootstrap/scss',
-    fontawsome: '../node_modules/font-awesome/',
+    bootstrap: '../../node_modules/bootstrap/scss',
+    fontawsome: '../../node_modules/font-awesome/',
     sassSrcPath: './Sass/**/*.scss',
     sassSrcAppPath: "./Sass/**/app.scss"
 };

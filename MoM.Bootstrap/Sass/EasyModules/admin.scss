@@ -9,17 +9,19 @@
 @media (min-width: 768px) {
   .admin-sidebar {
     position: fixed;
-    top: 90px;
-    width: 3rem;
+    top: 20%;
+    /*width: 3rem;*/
     /*bottom: 0;*/
+    padding:1rem;
     left: 0;
     z-index: 1000;
     display: block;
     /*padding-top: 2rem;*/
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: $gray-light;
-    border: 1px solid $gray;
+    background-color: $gray-dark;
+    border: 1px solid $gray;    
+    border-radius: 0.25rem;
     border-width: 1px 1px 1px 0;
   }
 }
@@ -32,15 +34,19 @@
   line-height: 3rem;  
 }
 
+.nav-admin-sidebar > li > a{
+    color: $gray;
+}
+
 .nav-admin-sidebar > li > a:hover,
 .nav-admin-sidebar > li > a:focus {
-  color: $gray-base;
+  color: $gray-lighter;
 }
 
 .nav-admin-sidebar > .active > a,
 .nav-admin-sidebar > .active > a:hover,
 .nav-admin-sidebar > .active > a:focus {
-  color: $gray-base;
+  color: $gray-lighter;
 }
 
 

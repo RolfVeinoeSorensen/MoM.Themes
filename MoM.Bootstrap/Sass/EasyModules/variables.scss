@@ -159,7 +159,7 @@ $headings-color:             inherit !default;
 $lead-font-size:             1.25rem !default;
 $lead-font-weight:           300 !default;
 
-$text-muted:                  $gray-light !default;
+$text-muted:                  darken($gray-lighter, 33.5%) !default;
 
 $abbr-border-color:           $gray-light !default;
 
@@ -455,10 +455,10 @@ $card-spacer-x:            1.25rem !default;
 $card-spacer-y:            .75rem !default;
 $card-border-width:        1px !default;
 $card-border-radius:       $border-radius !default;
-$card-border-color:        #e5e5e5 !default;
+$card-border-color:        $gray !default;
 $card-border-radius-inner: $card-border-radius !default;
-$card-cap-bg:              #f5f5f5 !default;
-$card-bg:                  #fff !default;
+$card-cap-bg:              $gray-light !default;
+$card-bg:                  $gray-dark !default;
 
 $card-link-hover-color:    #fff !default;
 

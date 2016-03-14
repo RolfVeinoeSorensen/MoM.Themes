@@ -4,19 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2121278F-64A9-4655-8D7C-33F0B36067CC}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-		package.json = package.json
-		README.md = README.md
-		typings.json = typings.json
-	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0194B034-6257-4053-99C0-9F251D93C059}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MoM", "MoM", "{0194B034-6257-4053-99C0-9F251D93C059}"
 	ProjectSection(SolutionItems) = preProject
 		..\MoM\MoM.Web\global.json = ..\MoM\MoM.Web\global.json
-		..\MoM\package.json = ..\MoM\package.json
 		..\MoM\README.md = ..\MoM\README.md
-		..\MoM\typings.json = ..\MoM\typings.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{ECEF1701-996B-4448-830B-9A6D5CE668A2}"
@@ -26,6 +18,19 @@ EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MoM.Module", "..\MoM\MoM.Module\MoM.Module.xproj", "{D3C87F61-4C59-4806-919F-3846A92120B9}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MoM.Bootstrap", "MoM.Bootstrap\MoM.Bootstrap.xproj", "{70F6FC05-6CCE-4E25-8EFF-2F917D558ED0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MoM.Themes", "MoM.Themes", "{6DB04EAE-3198-4CBE-9078-C80C91487C49}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{D2BB4D94-BCAB-4CCD-B48B-80AA002E5413}"
+	ProjectSection(SolutionItems) = preProject
+		..\gulpfile.js = ..\gulpfile.js
+		..\package.json = ..\package.json
+		..\typings.json = ..\typings.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,5 +58,7 @@ Global
 		{0194B034-6257-4053-99C0-9F251D93C059} = {2121278F-64A9-4655-8D7C-33F0B36067CC}
 		{B08799DB-58D3-42C2-8CB1-CE190E2A6C17} = {ECEF1701-996B-4448-830B-9A6D5CE668A2}
 		{D3C87F61-4C59-4806-919F-3846A92120B9} = {ECEF1701-996B-4448-830B-9A6D5CE668A2}
+		{6DB04EAE-3198-4CBE-9078-C80C91487C49} = {2121278F-64A9-4655-8D7C-33F0B36067CC}
+		{D2BB4D94-BCAB-4CCD-B48B-80AA002E5413} = {2121278F-64A9-4655-8D7C-33F0B36067CC}
 	EndGlobalSection
 EndGlobal
