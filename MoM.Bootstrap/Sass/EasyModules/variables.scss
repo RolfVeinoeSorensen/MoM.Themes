@@ -9,7 +9,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             #4E5D6C !default;   // #999
 $gray-lighter:           #EBEBEB !default; // #eee
 
-$brand-primary:         #9EBFDE !default;
+$brand-primary:         #698db0 !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -184,9 +184,9 @@ $list-inline-padding:         5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
-$border-radius-lg:       .3rem !default;
-$border-radius-sm:       .2rem !default;
+$border-radius:          0 !default;
+$border-radius-lg:       0 !default;
+$border-radius-sm:       0 !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;
@@ -391,21 +391,21 @@ $pagination-padding-y-lg:             .75rem !default;
 
 
 $pagination-color:                     $link-color !default;
-$pagination-bg:                        #fff !default;
+$pagination-bg:                        $gray-light !default;
 $pagination-border-width:              $border-width !default;
-$pagination-border-color:              #ddd !default;
+$pagination-border-color:              transparent  !default;
 
 $pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
-$pagination-hover-border:              #ddd !default;
+$pagination-hover-bg:                  $table-bg-hover !default;
+$pagination-hover-border:              transparent  !default;
 
 $pagination-active-color:              #fff !default;
 $pagination-active-bg:                 $brand-primary !default;
-$pagination-active-border:             $brand-primary !default;
+$pagination-active-border:             transparent  !default;
 
-$pagination-disabled-color:            $gray-light !default;
-$pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           #ddd !default;
+$pagination-disabled-color:            darken($table-bg-hover, 10%) !default;
+$pagination-disabled-bg:               $gray-light !default;
+$pagination-disabled-border:           transparent  !default;
 
 
 // Pager
@@ -457,8 +457,8 @@ $card-border-width:        1px !default;
 $card-border-radius:       $border-radius !default;
 $card-border-color:        $gray !default;
 $card-border-radius-inner: $card-border-radius !default;
-$card-cap-bg:              $gray-light !default;
-$card-bg:                  $gray-dark !default;
+$card-cap-bg:              $table-bg-hover !default;
+$card-bg:                  $gray-light !default;
 
 $card-link-hover-color:    #fff !default;
 
