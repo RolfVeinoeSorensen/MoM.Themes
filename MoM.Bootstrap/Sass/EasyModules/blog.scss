@@ -1,10 +1,10 @@
 ﻿.tag-cloud{
     span { padding: 0.5rem; }
-    .smallest { font-size: 60%; color: darken($text-color, 40%); }
-    .small { font-size: 80%; color: darken($text-color, 30%);}
+    .smallest { font-size: 80%; color: darken($text-color, 40%); }
+    .small { font-size: 90%; color: darken($text-color, 30%);}
     .medium { font-size: 100%; color: darken($text-color, 20%);}
-    .large { font-size: 150%; color: darken($text-color, 10%);}
-    .largest { font-size: 200%; color: darken($text-color, 13.5%); }
+    .large { font-size: 120%; color: darken($text-color, 10%);}
+    .largest { font-size: 140%; color: $text-color; }
 }
 
 .latest-posts {

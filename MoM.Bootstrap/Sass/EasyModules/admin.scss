@@ -2,68 +2,53 @@
  * Sidebar
  */
 
-/* Hide for mobile, show later */
-.admin-sidebar {
-  display: none;
-}
-@media (min-width: 768px) {
+
+
   .admin-sidebar {
     position: fixed;
-    top: 20%;
-    /*width: 3rem;*/
-    /*bottom: 0;*/
-    padding:1rem;
+    top: 62px;
+    bottom: 0;
     left: 0;
     z-index: 1000;
     display: block;
-    /*padding-top: 2rem;*/
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: $gray-dark;
-    border: 1px solid $gray;    
-    border-radius: 0.25rem;
-    border-width: 1px 1px 1px 0;
+    background-color: $gray-lighter;
+    text-align:center;
+    width: 5rem;
+    float:left;
   }
-}
+
 
 /* Sidebar navigation */
-.nav-admin-sidebar {
-  text-align:center;
+.nav-sidebar {
+
 }
-.nav-admin-sidebar > li > a {
-  line-height: 3rem;  
+.nav-sidebar > li {
+    height:4rem;
+    line-height: 4rem;
+}
+.nav-sidebar > li > a {
+    padding: 1rem;
+    color: $gray-light;
 }
 
-.nav-admin-sidebar > li > a{
-    color: $gray;
+.nav-sidebar > .active {
+    background-color: #428bca;
 }
-
-.nav-admin-sidebar > li > a:hover,
-.nav-admin-sidebar > li > a:focus {
-  color: $gray-lighter;
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: $text-color;
 }
-
-.nav-admin-sidebar > .active > a,
-.nav-admin-sidebar > .active > a:hover,
-.nav-admin-sidebar > .active > a:focus {
-  color: $gray-lighter;
-}
-
 
 /*
  * Main content
  */
 
 .admin-main {
-    
-  /*padding: 20px;*/
-}
-@media (min-width: 768px) {
-  .admin-main {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-.admin-main .admin-page-header {
-  margin-top: 0;
+  float:left;
+  padding-top: 2rem;
+  padding-left: 7rem;
+  width: 100%;
 }

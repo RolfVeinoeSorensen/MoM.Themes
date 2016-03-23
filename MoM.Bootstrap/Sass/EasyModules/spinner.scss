@@ -1,11 +1,25 @@
-﻿.spinner-outer {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  .spinner-inner {
-    display: inline-block;
-  }
+﻿.spinner-container {
+    height:100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    background-color:$text-color;
+    z-index: 1090;
+    position:fixed;
+    top:0;
+    left:0;
+    .spinner-outer {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);      
+      .spinner-inner {
+        text-align:center;
+        display: inline-block;
+        color: $body-bg;
+      }
+    }
 }
+
 

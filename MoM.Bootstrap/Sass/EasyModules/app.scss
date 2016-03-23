@@ -3,6 +3,7 @@
 @import "variables.scss";
 // Import bootstrap and fontawesome
 @import "bootstrap";
+@import "card.scss";
 
 @import "layout.scss";
 @import "nav.scss";
@@ -10,5 +11,6 @@
 @import "fileupload.scss";
 @import "admin.scss";
 @import "blog.scss";
+@import "forms.scss";
 
 /*@import "font-awesome";*/

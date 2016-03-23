@@ -1,0 +1,7 @@
+﻿.ng-valid[required] {
+  border-left: 0.5rem solid $brand-success; /* green */
+}
+
+.ng-invalid {
+  border-left: 0.5rem solid $brand-danger; /* red */
+}
