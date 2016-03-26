@@ -15,6 +15,8 @@
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: $gray-lighter;
     text-align:center;
+    padding-left: 0;
+    padding-right:0;
   }
 
 
@@ -23,18 +25,35 @@
 
 }
 .nav-sidebar > li {
-    height:4rem;
-    line-height: 4rem;
+    padding-top: 1rem;
+    /*padding-bottom: 1rem;*/
+
+    @media (min-width: 544px) {
+        height:5rem;
+        /*line-height:5rem;*/
+    }
+    @media (max-width: 544px) {
+        /*height:3rem;*/
+        line-height:3rem;
+    }
+    /*line-height: 2.5rem;*/
 }
 .nav-sidebar > li > a {
     /*padding: 1rem;*/
     color: $gray-light;
+    text-decoration:none;
+    p {
+        
+        @media (max-width: 544px) {
+            display:none
+        }
+    }
 }
 
 .nav-sidebar > .active,
 .nav-sidebar > .active:hover,
 .nav-sidebar > .active:focus {
-    background-color: #428bca;
+    background-color: $nav-link-background;
 }
 
 .nav-sidebar > li:hover,

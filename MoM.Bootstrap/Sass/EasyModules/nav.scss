@@ -43,15 +43,21 @@
     .navbar-nav .nav-link.router-link-active,
     .navbar-nav .nav-link.router-link-active:hover,
     .navbar-nav .nav-link.router-link-active:focus {
-        background-color: #428bca;
+        background-color: $nav-link-background;
         color: $text-color;
     }
 
-    .navbar-nav .nav-link,
+    .navbar-nav .nav-link {
+        font-weight: 500;
+        color: $gray-light;
+    }
+
     .navbar-nav .nav-link:hover,
     .navbar-nav .nav-link:focus {
-      color: $gray-light;
+      color: $gray-base;
     }
+
+
     .mom-header-search{
         float:left;
         width: 200px;
