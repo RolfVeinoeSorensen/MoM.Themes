@@ -17,7 +17,20 @@
             margin:0;
             margin-right: 2rem;
             margin-left: 1rem;
+            width: 200px;
+            @media (min-width: 768px) {
+                width: 250px;
+            }
+            @media (min-width: 992px) {
+                width: 320px;
+            }
         }
+    }
+    .navbar-toggler {
+        color: $gray-light;
+    }
+    .mom-collapse-menu {
+        background-color: $gray-lighter;
     }
     .navbar-nav > li {
     height:4rem;

@@ -6,7 +6,7 @@
 
   .admin-sidebar {
     position: fixed;
-    top: 62px;
+    top: 61px;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -15,8 +15,6 @@
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: $gray-lighter;
     text-align:center;
-    width: 5rem;
-    float:left;
   }
 
 
@@ -29,13 +27,26 @@
     line-height: 4rem;
 }
 .nav-sidebar > li > a {
-    padding: 1rem;
+    /*padding: 1rem;*/
     color: $gray-light;
 }
 
-.nav-sidebar > .active {
+.nav-sidebar > .active,
+.nav-sidebar > .active:hover,
+.nav-sidebar > .active:focus {
     background-color: #428bca;
 }
+
+.nav-sidebar > li:hover,
+.nav-sidebar > li:focus {
+  background-color: $gray-light;
+  a {
+      color: $text-color;
+  }
+  
+}
+
+
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
@@ -47,8 +58,6 @@
  */
 
 .admin-main {
-  float:left;
-  padding-top: 2rem;
-  padding-left: 7rem;
-  width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
 }
