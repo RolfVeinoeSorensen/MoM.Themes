@@ -368,16 +368,16 @@ $nav-link-hover-bg:                         $gray-lighter !default;
 $nav-disabled-link-color:                   $body-bg !default;
 $nav-disabled-link-hover-color:             $gray-darker !default;
 
-$nav-tabs-border-color:                     #ddd !default;
+$nav-tabs-border-color:                     $gray-light !default;
 
 $nav-tabs-link-border-width:                $border-width !default;
-$nav-tabs-link-hover-border-color:          $gray-dark !default;
+$nav-tabs-link-hover-border-color:          $body-bg !default;
 
-$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-color:          #ddd !default;
-$nav-tabs-active-link-hover-border-color:   #ddd !default;
+$nav-tabs-active-link-hover-bg:             $gray-light !default;
+$nav-tabs-active-link-hover-color:          $gray-lighter !default;
+$nav-tabs-active-link-hover-border-color:   $gray-light !default;
 
-$nav-tabs-justified-link-border-color:            #ddd !default;
+$nav-tabs-justified-link-border-color:            $gray-lighter !default;
 $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 $nav-pills-border-radius:                   $border-radius !default;
