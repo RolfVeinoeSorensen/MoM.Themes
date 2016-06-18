@@ -18,6 +18,9 @@
         text-align:center;
         display: inline-block;
         color: $body-bg;
+        .spinner-cog, .spinner-loading-text{
+            color:$gray-dark;
+        }
       }
     }
 }
