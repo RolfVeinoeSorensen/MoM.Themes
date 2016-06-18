@@ -1,5 +1,5 @@
 # MoM.Themes
-<p><img src="MoM.Web/assets/momlogo.png" srcset="MoM.Web/assets/momlogo.svg 1x" class="navbar-brand" alt="MoM Logo" width="152" height="150"></p>
+<p><img src="assets/momlogo.png" srcset="assets/momlogo.svg 1x" class="navbar-brand" alt="MoM Logo" width="152" height="150"></p>
 
 Themes to make MoM look beautiful like she deserves.
 
