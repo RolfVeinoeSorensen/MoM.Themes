@@ -1,4 +1,5 @@
 # MoM.Themes
+[![Gitter](https://badges.gitter.im/momcms/MoM.svg)](https://gitter.im/momcms/MoM?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 <p><img src="assets/momlogo.png" srcset="assets/momlogo.svg 1x" class="navbar-brand" alt="MoM Logo" width="152" height="150"></p>
 
 Themes to make MoM look beautiful like she deserves.
