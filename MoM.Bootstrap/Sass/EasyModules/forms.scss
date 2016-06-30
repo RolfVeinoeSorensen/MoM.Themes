@@ -16,3 +16,69 @@
 }
 
 input:-webkit-autofill { -webkit-box-shadow:0 0 0 500px white inset; }
+
+/* https://proto.io/freebies/onoff/ 
+    Usage:
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+*/
+.onoffswitch {
+    position: relative; width: 80px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 0.5rem;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 32px; padding: 0; line-height: 32px;
+    font-size: $font-size-base; color: white; font-family: $font-family-base; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "On";
+    padding-left: 14px;
+    background-color: $brand-primary; color: $gray-lightest;
+}
+
+.onoffswitch-inner:after {
+    content: "Off";
+    padding-right: 14px;
+    background-color: $gray-light; color: $gray-lighter;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 20px; height: 20px; margin: 8px;
+    background: $brand-danger;
+    position: absolute; top: 0; bottom: 0;
+    right: 44px;
+    border: 2px solid #FFFFFF; border-radius: 10px;
+    transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: $brand-success; 
+}
